@@ -13,7 +13,6 @@
     "svelte": "^3.54.0",
     "svelte-dark-mode": "^2.1.0",
     "svelte-sidebar-menu": "^0.9.12",
-    "svelte-youtube-embed": "^0.1.8",
     "vite": "^4.0.0"
   }
 }

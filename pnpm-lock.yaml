@@ -5,7 +5,6 @@ specifiers:
   svelte: ^3.54.0
   svelte-dark-mode: ^2.1.0
   svelte-sidebar-menu: ^0.9.12
-  svelte-youtube-embed: ^0.1.8
   vite: ^4.0.0
 
 devDependencies:
@@ -13,7 +12,6 @@ devDependencies:
   svelte: 3.55.0
   svelte-dark-mode: 2.1.0
   svelte-sidebar-menu: 0.9.12
-  svelte-youtube-embed: 0.1.8
   vite: 4.0.4
 
 packages:
@@ -393,10 +391,6 @@ packages:
   /svelte-sidebar-menu/0.9.12:
     resolution: {integrity: sha512-7mUC/5SJDo88oOpjm5zdIoSbjhtrcmFmzs1YBs6AMgcl41L96XO4sMIHgQQAwAZJ43VWhcg+akXPGygYvzynjw==}
     engines: {node: '>=16.0.0', npm: '>=7.0.0'}
-    dev: true
-
-  /svelte-youtube-embed/0.1.8:
-    resolution: {integrity: sha512-91FmRL0G9x64Qxf7vRIycuRon3cIOjO6YMeUvEjhRD+MUeIMZs4XuPv/ULtK/xvKmSH/T9DE0FgtFaBqZ4HxWg==}
     dev: true
 
   /svelte/3.55.0:

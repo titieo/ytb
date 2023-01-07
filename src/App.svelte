@@ -2,16 +2,23 @@
 // @ts-nocheck
 // import Sidebar from './lib/Sidebar.svelte';
 // let sidebar_show = false;
-
+import { onMount } from "svelte";
 import Youtube from "./lib/Youtube.svelte";
 // https://github.com/sharu725/youtube-embed
-  import ytbs from "./data.json";
 
+const endpoint = "https://api.npoint.io/221ca8132b538eb32182";
+
+let ytbs = [];
+onMount(async function () {
+  const response = await fetch(endpoint);
+  const data = await response.json();
+  console.log(data);
+  ytbs=data;
+});
 //    import DarkMode from "svelte-dark-mode";
-
-  let theme;
-  $: switchTheme = theme === "dark" ? "light" : "dark";
-  $: document.body.className = theme;
+//   let theme;
+//   $: switchTheme = theme === "dark" ? "light" : "dark";
+//   $: document.body.className = theme;
 
 //   import { Side, Nav, SidebarList } from 'svelte-sidebar-menu';
 </script>
