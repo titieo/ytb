@@ -18,23 +18,16 @@ import Youtube from "./lib/Youtube.svelte";
 
 <nav id="NavBar"></nav>
 <main>
-    <article>
-        <h2 class="vid-group__title">Tinna Tình</h2>
+    {#each ytbs as {name,list},i}
+              <article>
+        <h2 class="vid-group__title">{name}</h2>
         <div class="vid-list">
-            {#each ytbs.TinnaTinh as vid}
+            {#each list as vid}
                 <Youtube id="{vid}" />
             {/each}
         </div>
     </article>
-
-    <article>
-        <h2 class="vid-group__title">Tâm Chương</h2>
-        <div class="vid-list">
-            {#each ytbs.TamChuong as vid}
-                <Youtube id="{vid}" />
             {/each}
-        </div>
-    </article>
 </main>
 
 <!-- Darkmode -->
