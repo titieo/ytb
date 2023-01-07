@@ -6,6 +6,7 @@ import { onMount } from "svelte";
 import Youtube from "./lib/Youtube.svelte";
 // https://github.com/sharu725/youtube-embed
 
+
 const endpoint = "https://api.npoint.io/221ca8132b538eb32182";
 
 let ytbs = [];
@@ -19,11 +20,8 @@ onMount(async function () {
 //   let theme;
 //   $: switchTheme = theme === "dark" ? "light" : "dark";
 //   $: document.body.className = theme;
-
-//   import { Side, Nav, SidebarList } from 'svelte-sidebar-menu';
 </script>
 
-<nav id="NavBar"></nav>
 <main>
     {#each ytbs as {name,list},i}
               <article>

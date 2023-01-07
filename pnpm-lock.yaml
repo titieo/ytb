@@ -4,14 +4,12 @@ specifiers:
   '@sveltejs/vite-plugin-svelte': ^2.0.0
   svelte: ^3.54.0
   svelte-dark-mode: ^2.1.0
-  svelte-sidebar-menu: ^0.9.12
   vite: ^4.0.0
 
 devDependencies:
   '@sveltejs/vite-plugin-svelte': 2.0.2_svelte@3.55.0+vite@4.0.4
   svelte: 3.55.0
   svelte-dark-mode: 2.1.0
-  svelte-sidebar-menu: 0.9.12
   vite: 4.0.4
 
 packages:
@@ -386,11 +384,6 @@ packages:
       svelte: '>=3.19.0'
     dependencies:
       svelte: 3.55.0
-    dev: true
-
-  /svelte-sidebar-menu/0.9.12:
-    resolution: {integrity: sha512-7mUC/5SJDo88oOpjm5zdIoSbjhtrcmFmzs1YBs6AMgcl41L96XO4sMIHgQQAwAZJ43VWhcg+akXPGygYvzynjw==}
-    engines: {node: '>=16.0.0', npm: '>=7.0.0'}
     dev: true
 
   /svelte/3.55.0:
