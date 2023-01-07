@@ -1,19 +1,12 @@
 .vid-list {
   display: flex;
   flex-wrap: wrap;
-  margin: 2rem 3rem;
-  gap: 1rem 2rem;
+  margin: 1rem 2rem;
+  gap: 0.5rem 1rem;
   justify-content: center;
   align-items: center;
   align-content: space-around;
-}
-@media (max-width: 800px) {
-  .vid-list {
-    flex-direction: column;
-  }
-}
-.vid-list > * {
-  flex-basis: 30rem;
+  flex-direction: column;
 }
 
 #NavBar {
@@ -23,8 +16,6 @@
   width: 100%;
 }
 
-.vid-group {
-}
 .vid-group__title {
   margin-left: 1rem;
 }
@@ -34,7 +25,7 @@ body {
   color: whitesmoke;
 }
 main {
-  margin: 2rem;
+  margin: 1rem;
 }
 
 #tgSide {
@@ -47,4 +38,18 @@ main {
   border-radius: 100rem;
   bottom: 1rem;
   left: 1rem;
+}
+
+@media (min-width: 768px) {
+  .vid-list {
+    flex-direction: row;
+    margin: 2rem 3rem;
+    gap: 1rem 2rem;
+  }
+  .vid-list > * {
+    flex-basis: 30rem;
+  }
+  main {
+    margin: 2rem;
+  }
 }
