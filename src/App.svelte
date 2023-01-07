@@ -4,9 +4,10 @@
 // let sidebar_show = false;
 
 import Youtube from "./lib/Youtube.svelte";
+// https://github.com/sharu725/youtube-embed
   import ytbs from "./data.json";
 
-   import DarkMode from "svelte-dark-mode";
+//    import DarkMode from "svelte-dark-mode";
 
   let theme;
   $: switchTheme = theme === "dark" ? "light" : "dark";
@@ -17,11 +18,22 @@ import Youtube from "./lib/Youtube.svelte";
 
 <nav id="NavBar"></nav>
 <main>
-    <article class="vid-list">
+    <article>
+        <h2 class="vid-group__title">Tinna Tình</h2>
+        <div class="vid-list">
+            {#each ytbs.TinnaTinh as vid}
+                <Youtube id="{vid}" />
+            {/each}
+        </div>
+    </article>
 
-        {#each ytbs as vid}
-            <Youtube id="{vid}" />
-        {/each}
+    <article>
+        <h2 class="vid-group__title">Tâm Chương</h2>
+        <div class="vid-list">
+            {#each ytbs.TamChuong as vid}
+                <Youtube id="{vid}" />
+            {/each}
+        </div>
     </article>
 </main>
 

@@ -23,9 +23,18 @@
   width: 100%;
 }
 
+.vid-group {
+}
+.vid-group__title {
+  margin-left: 1rem;
+}
+
 body {
   background-color: #0f0f0f;
   color: whitesmoke;
+}
+main {
+  margin: 2rem;
 }
 
 #tgSide {

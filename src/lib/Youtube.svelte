@@ -75,6 +75,7 @@
     width: 100%;
     aspect-ratio: var(--aspect-ratio);
     cursor: pointer;
+     background: var(--overlay-bg-color,hsla(0,0,0,0.7), #00000030);
     transition: var(--overlay-transition, all 250ms ease-in-out);
   }
   .you__tube:hover .b__overlay {
