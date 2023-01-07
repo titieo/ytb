@@ -1,0 +1,41 @@
+.vid-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem 3rem;
+  gap: 1rem 2rem;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+}
+@media (max-width: 800px) {
+  .vid-list {
+    flex-direction: column;
+  }
+}
+.vid-list > * {
+  flex-basis: 30rem;
+}
+
+#NavBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+body {
+  background-color: #0f0f0f;
+  color: whitesmoke;
+}
+
+#tgSide {
+  position: fixed;
+  background-color: white;
+  /* border: 0; */
+  box-shadow: 0 0 3px 0px gray;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100rem;
+  bottom: 1rem;
+  left: 1rem;
+}
